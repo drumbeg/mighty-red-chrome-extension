@@ -1,0 +1,15 @@
+{
+   "manifest_version": 2,
+
+   "name": "Mighty Red",
+   "description": "Mighty Red",
+   "version": "0.1",
+
+   "browser_action": {
+      "default_icon": "app/plus1.png",
+      "default_popup": "app/plus1.html"
+   },
+   "background": {
+     "scripts": ["core/background.js"]
+   }
+}
