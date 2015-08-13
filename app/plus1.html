@@ -1,9 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="PlusOneApp">
    <head>
-      <script src="plus1.js"></script>
+      <script src="../lib/angular.min.js"></script>
+      <script src="../lib/angular-mocks.js"></script>
+      <script src="../core/app.js"></script>
+      <script src="../core/api/mock/ProfileService.js"></script>
+      <script src="../core/api/ProfileService.js"></script>
+      <script src="../core/controller/ProfileController.js"></script>
    </head>
    <body>
-      <!-- HTML when extension clicked goes here. Profile pics etc -->
-      <a href="#" id="test">Click Me</a>
+      <div id="profileWrapper" ng-controller="ProfileController">
+         <ul>
+            <li ng-repeat="attendee in attendees" class="profile-list-item">
+               <span ng-click="getProfile(attendee.id)">{{attendee.name}}</span>
+               <span>{{attendee.gender}}</span>
+               <span>{{attendee.age}}</span>
+            </li>
+         </ul>
+         <div ng-show="activeProfile">{{activeProfile.description}}</div>
+         <button ng-click="addProfile()">Add my Plus 1</button>
+      </div>
    </body>
 </html>

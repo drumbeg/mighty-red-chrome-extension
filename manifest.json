@@ -10,6 +10,6 @@
       "default_popup": "app/plus1.html"
    },
    "background": {
-     "scripts": ["core/background.js"]
+     "scripts": ["app/background.js"]
    }
 }
