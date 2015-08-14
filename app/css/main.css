@@ -72,7 +72,7 @@
 	height: 30px;
 	width: 200px;
     margin:0 auto;
-    color: #fff: 
+    color: #fff:
 }
 .button:hover, .tab:hover {
 	background: #ce3052;
@@ -81,7 +81,7 @@
 h1:hover {
 	color: #000;
 }
-.button:active, .tab:active { 
+.button:active, .tab:active {
     background-color: white;
 }
 

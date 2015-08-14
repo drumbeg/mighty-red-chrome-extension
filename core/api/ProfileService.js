@@ -4,7 +4,6 @@ angular.module('PlusOneApp')
          query: function () {
             return $http.get('/profiles');
          },
-
          get: function (id) {
             return $http.get('/profiles/' + id);
          }

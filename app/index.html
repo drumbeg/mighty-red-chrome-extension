@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="PlusOneApp" ng-csp>
+  <head>
+    <script src="../lib/angular.min.js"></script>
+    <script src="../lib/angular-mocks.js"></script>
+    <script src="../lib/angular-animate.min.js"></script>
+    <script src="../core/app.js"></script>
+    <script src="../core/api/mock/ProfileService.js"></script>
+    <script src="../core/api/ProfileService.js"></script>
+    <script src="../core/controller/ProfileController.js"></script>
+    <script src="../core/controller/TabController.js"></script>
+    <script src="../core/directive/profile/profile.js"></script>
+    <link rel="stylesheet" type="text/css" href="../lib/angular-csp.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="maincontainer" ng-controller="TabController">
+      <div id="tabholder">
+        <div class="tab" ng-click="setTab('people')"><h1>People</h1></div>
+        <div class="tab" ng-click="setTab('filter')"><h1>Filter</h1></div>
+      </div>
+      <img class="settings" src="images/ButtonSettings.svg">
+      <div ng-show="activeTab=='people'" ng-include="'templates/profile.html'"></div>
+      <div ng-show="activeTab=='filter'" ng-include="'templates/filter.html'"></div>
+    </div>
+  </body>
+</html>
