@@ -36,5 +36,5 @@ angular.module('PlusOneApp').run(function($httpBackend) {
    });
 
    $httpBackend.whenGET(/templates\//).passThrough();
-   $httpBackend.whenGET('profile.html').passThrough();
+   $httpBackend.whenGET(/directive\//).passThrough();
 });
