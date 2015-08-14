@@ -87,20 +87,20 @@ h1:hover {
 
 
 p {
-	font-size: .75em;
+	font-size: 1em;
     color: #666;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 
 h1 {
-	font-size: 1em;
+	font-size: 1.5em;
     color: #fff;
     font-family: 'Fugaz One', serif;
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 2em;
     color: #d8596e;
     font-family: 'Fugaz One', serif;
 }
