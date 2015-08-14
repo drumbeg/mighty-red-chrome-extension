@@ -6,10 +6,10 @@
    "version": "0.1",
 
    "browser_action": {
-      "default_icon": "app/plus1.png",
-      "default_popup": "app/plus1.html"
+      "default_icon": "app/images/plus1.png",
+      "default_popup": "app/index.html"
    },
    "background": {
-     "scripts": ["app/background.js"]
+     "scripts": ["app/js/background.js"]
    }
 }

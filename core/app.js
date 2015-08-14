@@ -1,1 +1,1 @@
-angular.module('PlusOneApp', ['ngMockE2E']);
+angular.module('PlusOneApp', ['ngMockE2E', 'ngAnimate']);
