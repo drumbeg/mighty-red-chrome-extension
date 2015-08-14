@@ -87,32 +87,20 @@ h1:hover {
 
 
 p {
-	display: inline-block;
 	font-size: .75em;
-    color: #d8596e;
-    font-family: 'Fugaz One', serif;
+    color: #666;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 
 h1 {
-	display: block;
-    font-size: 1em;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    text-align: center;
+	font-size: 1em;
     color: #fff;
     font-family: 'Fugaz One', serif;
 }
 
 h2 {
-	display: block;
-    font-size: 1.2em;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+	font-size: 1.2em;
     color: #d8596e;
     font-family: 'Fugaz One', serif;
 }
