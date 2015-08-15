@@ -1,7 +1,7 @@
 angular.module('PlusOneApp')
    .directive('profile', function() {
       return {
-         restrict: 'E',
-         template: 'Name: {{attendee.name}}'
+         restrict: 'A',
+         templateUrl: '../core/directive/profile/profile.html'
       };
 });
