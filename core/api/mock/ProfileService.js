@@ -32,7 +32,7 @@ angular.module('PlusOneApp').run(function($httpBackend) {
    $httpBackend.whenGET('/profiles').respond(responseData);
    $httpBackend.whenGET(/\/profiles\/\d+/).respond(function (method, url) {
       var profileId = url.split('/')[2];
-      return [200, responseData.attendees[profileId], {}];
+      return [200, responseData.attendees[profileId]];
    });
 
    $httpBackend.whenGET(/templates\//).passThrough();

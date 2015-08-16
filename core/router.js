@@ -3,9 +3,9 @@ angular.module('PlusOneApp')
 	  	$routeProvider	   	
 	  		.when('/profiles', {
 	    		templateUrl: 'templates/profiles.html',
-	    		controller: 'ProfileController'
+	    		controller: 'ProfilesController'
 	  		})
-	  		.when('/profile/:profileId', {
+	  		.when('/profiles/:profileId', {
 	  			templateUrl: 'templates/profile.html',
 	  			controller: 'ProfileController'
 	  		})
