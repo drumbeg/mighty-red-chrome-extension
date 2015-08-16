@@ -1,5 +1,5 @@
 angular.module('PlusOneApp')
-   .controller('ProfileController', ['$scope', 'ProfileService', function($scope, ProfileService) {
+   .controller('ProfileController', function($scope, ProfileService, $location, $routeParams) {
       $scope.addMe = function() {
          console.log('added');
       }
@@ -7,7 +7,7 @@ angular.module('PlusOneApp')
       $scope.getProfile = function(id) {
          ProfileService.get(id)
             .then(function (response) {
-               console.log(response.data);
+               $location.path('profile/' + id);
             });
       }
 
@@ -15,4 +15,4 @@ angular.module('PlusOneApp')
          .then(function (response) {
             $scope.attendees = response.data.attendees;
          });
-   }]);
+   });

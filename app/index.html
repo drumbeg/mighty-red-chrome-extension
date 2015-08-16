@@ -4,7 +4,9 @@
     <script src="../lib/angular.min.js"></script>
     <script src="../lib/angular-mocks.js"></script>
     <script src="../lib/angular-animate.min.js"></script>
+    <script src="../lib/angular-route.min.js"></script>
     <script src="../core/app.js"></script>
+    <script src="../core/route.js"></script>
     <script src="../core/api/mock/ProfileService.js"></script>
     <script src="../core/api/ProfileService.js"></script>
     <script src="../core/controller/ProfileController.js"></script>
@@ -17,12 +19,11 @@
   <body>
     <div id="maincontainer" ng-controller="TabController">
       <div id="tabholder">
-        <div class="tab" ng-click="setTab('people')"><h1>People</h1></div>
+        <div class="tab" ng-click="setTab('profiles')"><h1>People</h1></div>
         <div class="tab" ng-click="setTab('filter')"><h1>Filter</h1></div>
       </div>
       <img class="settings" src="images/ButtonSettings.svg">
-      <div ng-show="activeTab=='people'" ng-include="'templates/people.html'"></div>
-      <div ng-show="activeTab=='filter'" ng-include="'templates/filter.html'"></div>
+      <div ng-view></div>
     </div>
   </body>
 </html>

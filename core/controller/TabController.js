@@ -1,6 +1,8 @@
 angular.module('PlusOneApp')
-   .controller('TabController', ['$scope', function($scope) {
-      $scope.setTab = function (tab) {
-         $scope.activeTab = tab;
-      }
-   }]);
+    .controller('TabController', ['$scope', '$location', function($scope, $location) {
+      	$scope.setTab = function (tab) {
+         	$location.path(tab);
+      	}
+
+      	$location.path('home');
+    }]);
