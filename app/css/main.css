@@ -7,7 +7,7 @@
 }
 
 #tabholder {
-	height: 30px;
+	height: 25px;
 	float:left;
 	display:inline;
 }
@@ -18,7 +18,7 @@
 	background-color: #d8596e;
 	float:left;
 	display:inline;
-	width:150px;
+	width:130px;
 }
 
 #people {
@@ -46,13 +46,14 @@
 	margin: .25em;
 }
 
-#testholder {
+.roundedwhitebox {
 	background-color: #fff;
 	border-radius: .25em;
     margin: 0.5em;
     width: auto;
     height: auto;
     padding: 10px;
+    overflow:auto;
 }
 
 .settings {
@@ -85,9 +86,6 @@
 	background: #ce3052;
 }
 
-h1:hover {
-	color: #000;
-}
 .button:active, .tab:active {
     background-color: white;
 }
