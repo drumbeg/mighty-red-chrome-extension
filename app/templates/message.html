@@ -1,0 +1,27 @@
+<div id="message">
+<a href="profile.html">
+  <div class="button_back"></div>
+</a>
+<div class="roundedwhitebox">
+  <div class="thumb">
+    <img src="images/profiles/profile01.jpg" style="max-width:100%;max-height:100%;position:relative" />
+  </div>
+  <div class="profiledetails">
+    <p>{{profile.name}}<br>{{profile.age}} yrs old</p>
+    <p>{{profile.description}}</p>
+  </div>
+</div>
+<p>Send a message to {{profile.name}}</p>
+<form name="message">
+<textarea rows="4" cols="50">
+Insert text here...
+</textarea>
+</form>
+<a href="people.html">
+<div class="button"><h1>Cancel</h1></div>
+</a>
+<a href="people.html">
+<div class="button"><h1>Send</h1></div>
+</a>
+
+</div>

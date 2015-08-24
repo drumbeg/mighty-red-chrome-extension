@@ -13,8 +13,8 @@
 }
 
 .tab {
-	border-top-right-radius: .25em;
-	border-top-left-radius: .25em;
+	border-top-right-radius: .5em;
+	border-top-left-radius: .5em;
 	background-color: #d8596e;
 	float:left;
 	display:inline;
@@ -55,6 +55,8 @@
     padding: 10px;
     overflow:auto;
 }
+
+.roundedwhitebox.grey { background-color: #ccc; }
 
 .settings {
 	width: 25px;
