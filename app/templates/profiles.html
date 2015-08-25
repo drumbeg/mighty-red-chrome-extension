@@ -1,0 +1,12 @@
+<div id="people">
+  <ul id="thumbholder">
+    <li class="thumb" ng-repeat="profile in profiles">
+      <span profile ng-click="getProfile(profile.id)"></span>
+    </li>
+  </ul>
+  <div class="centralised">
+    <div class="button" ng-click="addMe()">
+      <h1>Get me a +1</h1>
+    </div>
+  </div>
+</div>

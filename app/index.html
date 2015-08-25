@@ -5,14 +5,15 @@
     <script src="../lib/angular-mocks.js"></script>
     <script src="../lib/angular-animate.min.js"></script>
     <script src="../lib/angular-route.min.js"></script>
-    <script src="../core/app.js"></script>
-    <script src="../core/router.js"></script>
-    <script src="../core/api/mock/ProfileService.js"></script>
-    <script src="../core/api/ProfileService.js"></script>
-    <script src="../core/controller/ProfileController.js"></script>
-    <script src="../core/controller/ProfilesController.js"></script>
-    <script src="../core/controller/TabController.js"></script>
-    <script src="../core/directive/profile/profile.js"></script>
+    <script src="app.js"></script>
+    <script src="router.js"></script>
+    <script src="api/mock/ProfileService.js"></script>
+    <script src="api/ProfileService.js"></script>
+    <script src="controller/ProfileController.js"></script>
+    <script src="controller/ProfilesController.js"></script>
+    <script src="controller/TabController.js"></script>
+    <script src="controller/InterestController.js"></script>
+    <script src="directive/profile/profile.js"></script>
     <link rel="stylesheet" type="text/css" href="../lib/angular-csp.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet' type='text/css'>
@@ -23,7 +24,7 @@
         <div class="tab" ng-click="setTab('profiles')"><h1>People</h1></div>
         <div class="tab" ng-click="setTab('filter')"><h1>Filter</h1></div>
       </div>
-      <img class="settings" src="images/ButtonSettings.svg">
+      <img class="settings" src="images/ButtonSettings.svg" ng-click="setTab('settings')">
       <div ng-view></div>
     </div>
   </body>
