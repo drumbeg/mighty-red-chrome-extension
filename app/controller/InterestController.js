@@ -1,6 +1,7 @@
 angular.module('PlusOneApp')
-   .controller('InterestController', function($scope, $location) {
+   .controller('InterestController', function($scope, $location, NotificationService) {
    	$scope.add = function () {
+   		NotificationService.push('Interest Added');
    		$location.path('/profiles');
    	}
 

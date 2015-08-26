@@ -1,5 +1,5 @@
 angular.module('PlusOneApp')
-   .controller('ProfilesController', function($scope, ProfileService, $location, $routeParams) {
+   .controller('ProfilesController', function($scope, ApiService, $location, $routeParams) {
       $scope.addMe = function() {
          $location.path('/interest');
       }
@@ -8,7 +8,7 @@ angular.module('PlusOneApp')
          $location.path('/profiles/' + id)
       }
 
-      ProfileService.query()
+      ApiService.query()
          .then(function (response) {
             $scope.profiles = response.data.profiles;
          });

@@ -1,5 +1,5 @@
 angular.module('PlusOneApp')
-   .factory('ProfileService', function($http) {
+   .factory('ApiService', function($http) {
       var service = {
          query: function () {
             return $http.get('/profiles');
