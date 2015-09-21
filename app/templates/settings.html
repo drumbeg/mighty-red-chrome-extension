@@ -2,10 +2,21 @@
 	<a href="settings.html">
 	  <div class="button_back"></div>
 	</a>
-	<div class="button">
+	<div class="roundedwhitebox">
+    <div class="thumb">
+      <span profile></span>
+    </div>
+    <div class="profiledetails">
+      <p>{{profile.name}}<br>{{profile.age}} yrs old</p>
+      <form name="message">
+		<textarea rows="4" cols="41">{{profile.description}}</textarea>
+	</form>
+    </div>
+  </div>
+	<div class="button" style="margin-top:10px; text-align: center;">
 		<h1>Close Account</h1>
 	</div>
-	<div class="button">
+	<div class="button" style="margin-top:10px; text-align: center;">
 		<h1>Log out</h1>
 	</div>
 </div>

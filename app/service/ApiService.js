@@ -6,6 +6,9 @@ angular.module('PlusOneApp')
          },
          get: function (id) {
             return $http.get('/profiles/' + id);
+         },
+         getMyProfile: function () {
+            return $http.get('/my_profile');
          }
       }
 

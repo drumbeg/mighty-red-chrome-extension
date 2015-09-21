@@ -36,8 +36,18 @@ angular.module('PlusOneApp').run(function($httpBackend) {
             blurb: "Friggin love Mad Keith me. Brendan has let me off training tomorrow so I can go."
          }
       ]
-   }
+   };
+   var myProfile =
+      {
+         id: 0,
+         name: "Me",
+         age: 35,
+         gender: 'Male',
+         description: "Hi, I'm Liam and I like horses and sweets.",
+         picture: "http://ichef-1.bbci.co.uk/news/768/cpsprodpb/E572/production/_85383785_clr15-16_md_9534_andrewashman.jpg" //create own picture
+      }
    $httpBackend.whenGET('/profiles').respond(responseData);
+   $httpBackend.whenGET('/my_profile').respond(myProfile);
    $httpBackend.whenGET(/\/profiles\/\d+/).respond(function (method, url) {
       var profileId = url.split('/')[2];
       return [200, responseData.profiles[profileId]];

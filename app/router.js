@@ -27,5 +27,9 @@ angular.module('PlusOneApp')
 	  			templateUrl: 'templates/settings.html',
 	  			controller: 'SettingsController'
 	  		})
+	  		.when('/my_interests', {
+	  			templateUrl: 'templates/my_interests.html',
+	  			controller: 'SettingsController'
+	  		})
 	  		.otherwise({redirectTo:'/profiles'});
 });

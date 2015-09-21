@@ -1,25 +1,33 @@
 #maincontainer {
 	width: 300px;
 	height: 420px;
-	border-bottom-right-radius: .25em;
-	border-bottom-left-radius: .25em;
-	background-color: #eee;
+	background-color: #fff;
+}
+#contentcontainer {
+    width: 290px;
+    height: 380px;
+    margin-top: 8px;
+    background-color: #eee;
+    border-bottom-right-radius: .5em;
+    border-bottom-left-radius: .5em;
+    border-top-right-radius: .5em;
+    padding: 5px;
 }
 
-#tabholder {
+/*#tabholder {
 	height: 25px;
 	float:left;
 	display:inline;
-}
+}*/
 
-.tab {
+/*.tab {
 	border-top-right-radius: .5em;
 	border-top-left-radius: .5em;
 	background-color: #d8596e;
 	float:left;
 	display:inline;
 	width:130px;
-}
+}*/
 
 #people {
 	float:left;
@@ -29,15 +37,17 @@
 #thumbholder {
 	background-color: #fff;
 	border-radius: .25em;
-    margin: 0.5em;
-    width: auto;
+    width: 100%;
+    box-sizing: border-box;
     height: 260px;
     padding: 10px;
+    overflow: scroll;
+
 }
 
 .thumb {
-	width: 120px;
-	height: 120px;
+	width: 125px;
+	height: 125px;
 	border-style: solid;
     border-width: 1px;
     border-color: #eee;
@@ -49,8 +59,8 @@
 .roundedwhitebox {
 	background-color: #fff;
 	border-radius: .25em;
-    margin: 0.5em;
-    width: auto;
+    width: 100%;
+    box-sizing: border-box;
     height: auto;
     padding: 10px;
     overflow:auto;
@@ -58,10 +68,13 @@
 
 .roundedwhitebox.grey { background-color: #ccc; }
 
-.settings {
+img.settings {
 	width: 25px;
-	margin-left:.5em;
-	margin-top:.5em;
+	margin-left:7.5px;
+	margin-top:7.5px;
+}
+img.settings.active {
+    color: #fff;
 }
 
 .buttonmessages {
@@ -70,19 +83,28 @@
 	margin-top:.5em;
 }
 
-
-
-
-.centralised {
-	text-align: center;
-}
 .button {
 	background: #d8596e;
 	border-radius: .25em;
 	height: 30px;
 	width: 200px;
     margin:0 auto;
-    color: #fff:
+    color: #fff;
+    padding-top:10px;
+    margin-top:10px;
+    text-align: center;
+}
+.buttonSecondary {
+    background: #fff;
+    border-radius: .25em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d8596e;
+    height: 30px;
+    width: 200px;
+    margin:0 auto;
+    color: #d8596e;
+    padding-top:10px;
 }
 .button:hover, .tab:hover {
 	background: #ce3052;
@@ -97,6 +119,8 @@ p {
 	font-size: 1em;
     color: #666;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin-top: 0px;
+    margin-left: 10px;
 }
 
 
@@ -104,10 +128,44 @@ h1 {
 	font-size: 1.5em;
     color: #fff;
     font-family: 'Flamenco', cursive;
+    margin-top: 0px;
 }
 
 h2 {
 	font-size: 1.5em;
     color: #d8596e;
     font-family: 'Flamenco', cursive;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}*/
+div.tab {
+    border-top-right-radius: .5em;
+   border-top-left-radius: .5em;
+   background-color: #ccc;
+   display: inline;
+   float: left;
+    height: 30px;
+    width: 125px;
+    margin:0 auto;
+    color: #fff;
+    padding-top:10px;
+}
+
+/*#mainView {
+    border: 1px solid black;
+   clear: both;
+   padding: 0 1em;
+    width:400px;
+}*/
+
+div.tab.active {
+    background-color: #d8596e;
+    color: #fff;
 }
