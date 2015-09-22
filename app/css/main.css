@@ -5,7 +5,7 @@
 }
 #contentcontainer {
     width: 290px;
-    height: 380px;
+    height: 370px;
     margin-top: 8px;
     background-color: #eee;
     border-bottom-right-radius: .5em;
@@ -53,6 +53,7 @@
     float:left;
 	display:inline;
 	margin: .25em;
+    cursor: pointer;
 }
 
 .roundedwhitebox {
@@ -61,11 +62,23 @@
     width: 100%;
     box-sizing: border-box;
     height: auto;
-    padding: 10px;
+    padding: 1em;
     overflow:auto;
 }
 
 .roundedwhitebox.grey { background-color: #ccc; }
+
+textarea {
+    width: 100%;
+    padding: .1em;
+    border-color: #eee;
+    color: #888;
+    box-sizing: border-box;
+}
+textarea:focus {
+    color: #d8596e;
+    color: #666;
+}
 
 img.settings {
 	width: 25px;
@@ -105,8 +118,21 @@ img.settings.active {
     color: #d8596e;
     padding-top:10px;
 }
+.buttonIcon {
+    background: #d8596e;
+    border-radius: .25em;
+    height: 30px;
+    width: 200px;
+    margin:0 auto;
+    color: #fff;
+    padding-top:10px;
+    margin-top:10px;
+    text-align: center;
+    background-image: url("../images/plus1.png");
+}
 .button:hover, .tab:hover {
 	background: #ce3052;
+    cursor: pointer;
 }
 
 .button:active, .tab:active {
@@ -117,7 +143,7 @@ img.settings.active {
 p {
 	font-size: 1em;
     color: #666;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin-top: 0px;
     margin-left: 10px;
 }
@@ -126,16 +152,20 @@ p {
 h1 {
 	font-size: 1.5em;
     color: #fff;
-    font-family: 'Flamenco', cursive;
+    font-family: 'Flamenco', "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin-top: 0px;
 }
 
 h2 {
 	font-size: 1.5em;
     color: #d8596e;
-    font-family: 'Flamenco', cursive;
+    font-family: 'Flamenco', "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+h3 {
+    font-size: 1.25em;
 }
 
 /*ul {
@@ -167,4 +197,14 @@ div.tab {
 div.tab.active {
     background-color: #d8596e;
     color: #fff;
+}
+a {
+    color: #d8596e;
+    text-decoration: underline;
+}
+a:hover{
+    color: #ce3052;
+    cursor: pointer;
+    text-decoration: none;
+
 }

@@ -2,19 +2,21 @@
   <a href="people.html">
     <div class="button_back"></div>
   </a>
-  <div class="roundedwhitebox">
+  
     <div class="thumb">
       <span profile></span>
     </div>
     <div class="profiledetails">
-      <p>{{profile.name}}<br>{{profile.age}} yrs old</p>
+      <h3>{{profile.name}}</h3></br><p>{{profile.age}} yrs old</p>
       <p>{{profile.description}}</p>
     </div>
-  </div>
   <div class="roundedwhitebox">
     {{profile.blurb}}
   </div>
-  <div class="button" ng-click="hookUp(profile.id)">
-    <h1>Wanna go with me?</h1>
+  <div class="buttonIcon" ng-click="hookUp(profile.id)" style="position-top: 340px !important">
+    <h1>Back</h1>
+  </div>
+  <div class="button" ng-click="hookUp(profile.id)" style="position-top: 280px !important">
+    <h1>I'll go with you</h1>
   </div>
 </div>
