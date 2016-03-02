@@ -55,4 +55,6 @@ angular.module('PlusOneApp').run(function($httpBackend) {
 
    $httpBackend.whenGET(/templates\//).passThrough();
    $httpBackend.whenGET(/directive\//).passThrough();
+   $httpBackend.whenGET(/\/articles\/.+/).passThrough();
+   $httpBackend.whenPOST(/\/auth\/.+/).passThrough();
 });

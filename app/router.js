@@ -1,8 +1,12 @@
 angular.module('PlusOneApp')
 	.config(function($routeProvider) {
-	  	$routeProvider	   	
+	  	$routeProvider
 	  		.when('/filter', {
 	    		templateUrl: 'templates/filter.html'
+	  		})
+	  		.when('/login', {
+	  			templateUrl: 'templates/login.html',
+	  			controller: 'AuthController'
 	  		})
 	  		.when('/home', {
 	  			templateUrl: 'templates/home.html'

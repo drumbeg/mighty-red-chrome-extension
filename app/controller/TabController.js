@@ -5,10 +5,10 @@ angular.module('PlusOneApp')
             $scope.currentTab = tab;
       	}
 
-         $scope.isActiveTab = function(tab) {
+        $scope.isActiveTab = function(tab) {
             return tab == $scope.currentTab;
-         }
+        }
 
-         $scope.currentTab = 'profiles';
-      	$location.path('profiles');
+        //$scope.currentTab = 'profiles';
+      	$location.path('login');
     }]);

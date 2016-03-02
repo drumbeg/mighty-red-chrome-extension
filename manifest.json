@@ -12,5 +12,8 @@
    "background": {
      "scripts": ["app/js/background.js"]
    },
-   "permissions": ["notifications"]
+   "permissions": [
+      "notifications",
+      "http://178.62.97.136:3000/"
+   ]
 }
